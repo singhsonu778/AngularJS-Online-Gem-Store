@@ -1,0 +1,21 @@
+{
+  "name": "AngularJS-Online-Gem-Store",
+  "homepage": "https://github.com/singhsonu778/AngularJS-Online-Gem-Store",
+  "authors": [
+    "Sonu Kumar Singh <singhsonu778@gmail.com>"
+  ],
+  "description": "A simple AngularJS project to build online gem store.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8"
+  }
+}

@@ -1,2 +1,5 @@
 #Eclipse files
 .project
+
+#Bower library
+bower_components
