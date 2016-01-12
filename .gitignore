@@ -1,5 +1,8 @@
 #Eclipse files
 .project
 
+#Idea files
+.idea
+
 #Bower library
 bower_components
