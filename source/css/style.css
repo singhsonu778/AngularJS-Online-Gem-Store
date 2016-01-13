@@ -28,6 +28,10 @@ body {
     margin-right: 0;
 }
 
+li {
+	list-style: none;
+}
+
 li.small-image {
     width: 50px;
 }
