@@ -84,23 +84,12 @@
         this.products = gems;
     });
 
-    app.controller('TabController', function () {
-        this.tab = 1;
-        this.setTab = function (val) {
-            this.tab = val;
-        };
-        this.isSet = function (val) {
-            return this.tab == val;
-        };
-    });
-
     app.controller('GalleryController', function () {
         this.current = 0;
         this.setCurrent = function (val) {
             this.current = val || 0;
         };
     });
-    
 
     app.controller('ReviewController', function() {
 		this.review = {};	
@@ -130,5 +119,22 @@
           restrict: 'A',
           templateUrl: "templates/product-specs.html"
         };
-      });
+     });
+    
+	app.directive("productTabs", function() {
+		return {
+			restrict : 'E',
+			templateUrl : "templates/product-tabs.html",
+			controller : function() {
+				this.tab = 1;			
+				this.isSet = function(checkTab) {
+					return this.tab === checkTab;
+				};			
+				this.setTab = function(setTab) {
+					this.tab = setTab;
+				};
+			},
+			controllerAs : 'panel'
+		};
+	});
 })();
