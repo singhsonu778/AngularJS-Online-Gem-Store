@@ -117,4 +117,18 @@
     		templateUrl: 'templates/product-description.html'
     	};
     });
+    
+    app.directive('productReview', function() {
+    	return {
+    		restrict: 'E',
+    		templateUrl: 'templates/product-review.html'
+    	};
+    });
+    
+    app.directive("productSpecs", function() {
+        return {
+          restrict: 'A',
+          templateUrl: "templates/product-specs.html"
+        };
+      });
 })();
