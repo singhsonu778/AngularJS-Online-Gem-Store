@@ -50,8 +50,8 @@
 					<ul>		
 						<li ng-repeat="review in product.reviews">
 							<blockquote>
-								<strong>{{review.stars}} Stars</strong> {{review.body}} 
-								<cite class="clearfix">{{review.author}}</cite>
+								<strong>{{review.stars}} Stars</strong> {{review.body}}
+								<cite class="clearfix">-{{review.author}} on {{review.createdOn | date}}</cite>
 							</blockquote>
 						</li>
 					</ul>
