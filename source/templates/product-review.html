@@ -2,7 +2,7 @@
 <ul>
 	<li ng-repeat="review in product.reviews">
 		<blockquote>
-			<strong>{{review.stars}} Stars</strong> 
+			<strong>{{review.stars}} stars</strong> 
 			{{review.body}}
 			<cite class="clearfix">-{{review.author}} on {{review.createdOn | date}}</cite>
 		</blockquote>
@@ -10,7 +10,7 @@
 </ul>
 <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
 	<blockquote>
-		<strong>{{reviewCtrl.review.stars}} Stars</strong> 
+		<strong>{{reviewCtrl.review.stars}} stars</strong> 
 		{{reviewCtrl.review.body}} 
 		<cite class="clearfix">-{{reviewCtrl.review.author}}</cite>
 	</blockquote>
@@ -24,7 +24,7 @@
 		<textarea class="form-control" placeholder="Write a short review of the product..." title="Review" ng-model="reviewCtrl.review.body"></textarea>
 	</fieldset>
 	<fieldset class="form-group">
-		<input type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" ng-model="reviewCtrl.review.author" required/>
+		<input type="email" class="form-control" placeholder="singhsonu778@gmail.com" title="Email" ng-model="reviewCtrl.review.author" required/>
 	</fieldset>
 	<fieldset class="form-group">
 		<input type="submit" class="btn btn-primary pull-right" value="Submit Review"/>

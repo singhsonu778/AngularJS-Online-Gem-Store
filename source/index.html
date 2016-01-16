@@ -13,9 +13,7 @@
 			<h2 class="text-center">An Angular Store</h2>
 		</header>
 		<div class="list-group-item" ng-repeat="product in store.products">
-			<h3>
-				{{product.name}} <em class="pull-right">{{product.price | currency}}</em>
-			</h3>
+			<h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
 			<product-gallery></product-gallery>
 			<product-tabs></product-tabs>
 		</div>
